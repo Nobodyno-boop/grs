@@ -8,8 +8,7 @@ const global = {
       properties: {
         height: { type: "number", minimum: 1, maximum: 1000 },
         width: { type: "number", minimum: 1, maximum: 1000 },
-        color1: { type: "string", minimum: 6, maximum: 6 },
-        color2: { type: "string", minimum: 6, maximum: 6 },
+        colors: { type: "string", minimum: 12, maximum: 60 }, // 10 gradient maximum
         angle: { type: "number", minimum: 0, maximum: 360 },
       },
     },
@@ -23,13 +22,13 @@ const randomInt = (min, max) => {
 };
 
 module.exports = function (fastify, opts, done) {
-  let colors = require("../data/2-color.json");
+  let colors = require("../data/colors.json");
   let colorLength = colors.length;
   fastify.get("/:width/", global, async (request, reply) => {
     let { width } = request.params;
     let color = colors[randomInt(0, colorLength)];
 
-    let image = createImage(width, width, ...color, 50);
+    let image = createImage(width, width, color, 50);
     reply.type("image/png").send(image);
   });
 
@@ -37,25 +36,23 @@ module.exports = function (fastify, opts, done) {
     let { width, height } = request.params;
     let color = colors[randomInt(0, colorLength)];
 
-    let image = createImage(width, height, ...color, 50);
+    let image = createImage(width, height, color, 50);
     reply.type("image/png").send(image);
   });
-  fastify.get(
-    "/:width/:height/:color1/:color2/",
-    global,
-    async (request, reply) => {
-      let { width, height, color1, color2 } = request.params;
-      let image = createImage(width, height, color1, color2, 50);
-      reply.type("image/png").send(image);
-    }
-  );
-  fastify.get(
-    "/:width/:height/:color1/:color2/:angle/",
-    global,
-    async (request, reply) => {
-      let { width, height, color1, color2, angle } = request.params;
+  fastify.get("/:width/:height/:colors/", global, async (request, reply) => {
+    let { width, height, colors } = request.params;
 
-      let image = createImage(width, height, color1, color2, angle);
+    let image = createImage(width, height, colors.split(","));
+    reply.type("image/png").send(image);
+  });
+
+  fastify.get(
+    "/:width/:height/:colors/:angle/",
+    global,
+    async (request, reply) => {
+      let { width, height, colors, angle } = request.params;
+
+      let image = createImage(width, height, colors.split(","), angle);
       reply.type("image/png").send(image);
     }
   );
