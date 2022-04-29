@@ -6,7 +6,7 @@ WORKDIR /home/app
 
 COPY ./ /home/app/
 # for canvas
-RUN sudo apt-get install -y python
+RUN apt-get install -y python
 
 RUN yarn install --production
 
