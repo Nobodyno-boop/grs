@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipouColors</title>
+    <link rel="stylesheet" href="https://unpkg.com/github-markdown-css@5.1.0/github-markdown-dark.css" type="text/css">
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(251, 113, 133), rgb(253, 186, 116));
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="markdown-body">
+        {{data}}
+    </div>
+</body>
+
+</html>
