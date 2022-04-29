@@ -28,4 +28,4 @@ Your beautifull gradient placeholder !
 | colors | string | min: 12, max: 60 (10 hex color !) |
 | angle  | number | min: 0, max: 360                  |
 
-> Thanks to [cssgradient.io](https://cssgradient.io/gradient-backgrounds/) for all gradient his share !
+> Thanks to [cssgradient.io](https://cssgradient.io/gradient-backgrounds/) ♥
