@@ -39,10 +39,11 @@ npm run dev
 
 ### Environement variable
 
-| name | type   | default |
-| ---- | ------ | ------- |
-| PORT | number | 3000    |
-| HOST | string | 0.0.0.0 |
+| name      | type   | default |
+| --------- | ------ | ------- |
+| PORT      | number | 3000    |
+| HOST      | string | 0.0.0.0 |
+| RATELIMIT | number | 500     |
 
 ### Required
 
@@ -53,14 +54,14 @@ npm run dev
 
 ## Samples routes
 
-| route used                              | url                                                                                                        | result                                                                    |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `api/v1/:width/`                        | [api/v1/50/](pipoucolors.clownerie.space/api/v1/50/)                                                       | ![api](pipoucolors.clownerie.space/api/v1/50/)                            |
-| `api/v1/:width/:height/`                | [api/v1/50/70/](pipoucolors.clownerie.space/api/v1/50/70/)                                                 | ![api](pipoucolors.clownerie.space/api/v1/50/70/)                         |
-| `api/v1/:width/:height/:colors/`        | [api/v1/50/50/E36387,FCFFA6/](pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/)                     | ![api](pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/)           |
-| `api/v1/:width/:height/:colors/:angle/` | [api/v1/50/50/E36387,FCFFA6/180/](pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/180/)             | ![api](pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/180/)       |
-| `api/v1/:width/:height/:colors/`        | [api/v1/50/50/FA8BFF,2BD2FF,2BFF88/](pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/)       | ![api](pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/)    |
-| `api/v1/:width/:height/:colors/:angle/` | [api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/](pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/) | ![api](pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/) |
+| route used                              | url                                                                                                                | result                                                                            |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| `api/v1/:width/`                        | [api/v1/50/](https://pipoucolors.clownerie.space/api/v1/50/)                                                       | ![api](https://pipoucolors.clownerie.space/api/v1/50/)                            |
+| `api/v1/:width/:height/`                | [api/v1/50/70/](https://pipoucolors.clownerie.space/api/v1/50/70/)                                                 | ![api](https://pipoucolors.clownerie.space/api/v1/50/70/)                         |
+| `api/v1/:width/:height/:colors/`        | [api/v1/50/50/E36387,FCFFA6/](https://pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/)                     | ![api](https://pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/)           |
+| `api/v1/:width/:height/:colors/:angle/` | [api/v1/50/50/E36387,FCFFA6/180/](https://pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/180/)             | ![api](https://pipoucolors.clownerie.space/api/v1/50/50/E36387,FCFFA6/180/)       |
+| `api/v1/:width/:height/:colors/`        | [api/v1/50/50/FA8BFF,2BD2FF,2BFF88/](https://pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/)       | ![api](https://pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/)    |
+| `api/v1/:width/:height/:colors/:angle/` | [api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/](https://pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/) | ![api](https://pipoucolors.clownerie.space/api/v1/50/50/FA8BFF,2BD2FF,2BFF88/90/) |
 
 ## Routes properties
 

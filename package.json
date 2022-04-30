@@ -7,14 +7,19 @@
   "author": "Nobody <17411508+Nobodyno-boop@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "npx nodemon --watch src src/index.js"
+    "start": "cross-env NODE_ENV=production node src/index.js",
+    "dev": "cross-env NODE_ENV=development npx nodemon --watch src src/index.js"
   },
   "dependencies": {
     "@fastify/env": "^3.0.0",
+    "@fastify/rate-limit": "^6.0.0",
     "canvas": "^2.9.1",
+    "cross-env": "^7.0.3",
     "fastify": "^3.28.0",
     "fastify-markdown": "^0.4.0",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "pino-pretty": "^7.6.1"
   }
 }
