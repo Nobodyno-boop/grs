@@ -42,7 +42,7 @@ const initialize = async () => {
   await fastify.after();
   fastify
     .register(require("@fastify/rate-limit"), {
-      global: false,
+      global: true,
       max: fastify.config.RATELIMIT,
       timeWindow: "1 minute",
       // allowList: ["127.0.0.1"],
