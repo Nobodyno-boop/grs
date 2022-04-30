@@ -9,11 +9,6 @@ const randomInt = (min, max) => {
 
 module.exports = function (fastify, opts, done) {
   const global = {
-    config: {
-      rateLimit: {
-        max: fastify.config.RATELIMIT,
-      },
-    },
     schema: {
       params: {
         type: "object",
