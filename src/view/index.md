@@ -1,4 +1,4 @@
-# PipouColors ! v1.0.1
+# PipouColors ! v1.0.101
 
 ![Clowned Space](https://img.shields.io/badge/CLOWNED-SPACE-fca5a5?style=for-the-badge)
 [![Github](https://img.shields.io/badge/PipouColors-SPACE-fca5a5?style=for-the-badge&logo=github)](https://github.com/Nobodyno-boop/pipoucolor)
@@ -8,7 +8,7 @@ Your beautifull gradient placeholder !
 - [API](#sample-routes)
 - [Routes Properties](#params-properties)
 
-## Sample routes (Rate limite 500/minutes)
+## Sample routes (Rate limit 500/minutes)
 
 | route used                              | url                                                                            | result                                        |
 | --------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------- |
@@ -21,7 +21,7 @@ Your beautifull gradient placeholder !
 
 ## Routes properties
 
-| name   | type   | option                            |
+| name   | type   | options                           |
 | ------ | ------ | --------------------------------- |
 | height | number | min: 1, max: 1000                 |
 | width  | number | min: 1, max: 1000                 |
