@@ -1,20 +1,6 @@
 // base url /api/v1/
 const { createImage } = require("../image");
 
-const global = {
-  schema: {
-    params: {
-      type: "object",
-      properties: {
-        height: { type: "number", minimum: 1, maximum: 1000 },
-        width: { type: "number", minimum: 1, maximum: 1000 },
-        colors: { type: "string", minimum: 12, maximum: 60 }, // 10 gradient maximum
-        angle: { type: "number", minimum: 0, maximum: 360 },
-      },
-    },
-  },
-};
-
 const randomInt = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -22,6 +8,25 @@ const randomInt = (min, max) => {
 };
 
 module.exports = function (fastify, opts, done) {
+  const global = {
+    config: {
+      rateLimit: {
+        max: fastify.config.RATELIMIT,
+      },
+    },
+    schema: {
+      params: {
+        type: "object",
+        properties: {
+          height: { type: "number", minimum: 1, maximum: 1000 },
+          width: { type: "number", minimum: 1, maximum: 1000 },
+          colors: { type: "string", minimum: 12, maximum: 60 }, // 10 gradient maximum
+          angle: { type: "number", minimum: 0, maximum: 360 },
+        },
+      },
+    },
+  };
+
   let colors = require("../data/colors.json");
   let colorLength = colors.length;
   fastify.get("/:width/", global, async (request, reply) => {
