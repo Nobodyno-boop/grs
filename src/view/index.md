@@ -8,7 +8,7 @@ Your beautifull gradient placeholder !
 - [API](#sample-routes)
 - [Routes Properties](#params-properties)
 
-## Sample routes
+## Sample routes (Rate limite 500/minutes)
 
 | route used                              | url                                                                            | result                                        |
 | --------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------- |
