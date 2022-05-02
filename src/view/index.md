@@ -5,8 +5,8 @@
 
 Your beautifull gradient placeholder !
 
-- [API](#sample-routes)
-- [Routes Properties](#params-properties)
+- [API](#sample-routes-rate-limit-500minutes)
+- [Routes Properties](#routes-properties)
 
 ## Sample routes (Rate limit 500/minutes)
 
