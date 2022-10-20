@@ -1,6 +1,6 @@
 {
   "name": "grs",
-  "version": "1.0.101",
+  "version": "v1.0.102",
   "description": "A smooth gradient api",
   "main": "src/index.js",
   "repository": "https://github.com/Nobodyno-boop/grs.git",
