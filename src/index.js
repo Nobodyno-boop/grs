@@ -27,7 +27,7 @@ const envSchema = {
     },
     RATELIMIT: {
       type: "number",
-      default: 300,
+      default: 150,
     },
   },
 };

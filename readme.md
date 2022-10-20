@@ -43,7 +43,7 @@ npm run dev
 | --------- | ------ | ------- |
 | PORT      | number | 3000    |
 | HOST      | string | 0.0.0.0 |
-| RATELIMIT | number | 500     |
+| RATELIMIT | number | 150     |
 
 ### Required
 
