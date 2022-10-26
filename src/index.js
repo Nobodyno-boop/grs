@@ -82,3 +82,13 @@ const start = async () => {
 }
 
 initialize().then((x) => start())
+
+
+
+async function stopGracefully() {
+  await fastify.close()
+  console.log("Stop application gracefully");
+  process.exit()
+}
+
+process.on('SIGINT', stopGracefully)
