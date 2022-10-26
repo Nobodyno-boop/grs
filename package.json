@@ -17,7 +17,7 @@
     "cross-env": "^7.0.3",
     "fastify": "^3.28.0",
     "fastify-markdown": "github:Nobodyno-boop/fastify-markdown",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "pino-pretty": "^7.6.1"
