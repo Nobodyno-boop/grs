@@ -2,6 +2,7 @@
 
 ![Clowned Space](https://img.shields.io/badge/CLOWNED-SPACE-fca5a5?style=for-the-badge)
 [![Github](https://img.shields.io/badge/PipouColors-SPACE-fca5a5?style=for-the-badge&logo=github)](https://github.com/Nobodyno-boop/pipoucolor)
+[![CodeFactor](https://www.codefactor.io/repository/github/nobodyno-boop/pipoucolor/badge/master)](https://www.codefactor.io/repository/github/nobodyno-boop/pipoucolor/overview/master)
 
 Your beautifull gradient placeholder !
 
